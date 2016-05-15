@@ -1,0 +1,32 @@
+<html ng-app="clementineApp">
+    <head>
+      <title>First Node App</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="/public/css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>API Basejump: Timestamp microservice</h1>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+                </li>
+                <li class="list-group-item">
+                    If it does, it returns both the Unix timestamp and the natural language form of that date.
+                </li>
+                <li class="list-group-item">
+                    If it does not contain a date or Unix timestamp, it returns null for those properties.
+                </li>
+            </ul>
+            <h2>Example Usage:</h2>
+            <p class="redHighlight">https://timestamp-ms.herokuapp.com/December%2015,%202015</p>
+            <p class="redHighlight">https://timestamp-ms.herokuapp.com/1450137600</p>
+            
+            <br>
+            <h2>Example output:</h2>
+            <p class="redHighlight">{ "unix": 1450137600, "natural": "December 15, 2015" }</p>
+        </div>
+    </body>
+</html>    
